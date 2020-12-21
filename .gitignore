@@ -1,2 +1,3 @@
-test.xlsx
-workspace.code-workspace
+static/excel/
+static/workspace.code-workspace
+.DS_Store

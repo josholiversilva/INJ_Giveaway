@@ -1,7 +1,5 @@
 # Giveaway Application
 
----
-
 This website is used as a randomizer for irisnboba's 1k Followers Christmas Giveaway!    
 
 ## User Steps

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Required "Viewport" for css @media queries used to scale different devices -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- Ajax/Cloudflare Scripts/NPM-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/velocity-animate@2.0/velocity.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/velocity-animate@2.0/velocity.ui.min.js"></script>
+
+    <!-- Local Scripts-->
+    <script src="./index.js" type="text/javascript"></script>
+    <script src="./confetti/confetti.js"></script>
+    <script src="./excel/excel.js"></script>
+
+    <!-- CSS Styling-->
+    <link rel="stylesheet" type="text/css" href="./index.css" media="screen"/>
+</head>
+
+<body id="test">
+
+    <div id="christmas"></div>
+    <div id="christmas2"></div>
+    <div id="lights0"></div>
+    <div id="lights1"></div>
+    <div id="lights2"></div>
+    <div id="lights3"></div>
+    <div id="lights4"></div>
+
+    <div id="headerBlock">
+        <h1 id="header">1k 
+        <span style="color: red">C</span><span style="color: #FFD700">h</span><span style="color: #3F69C7">r</span><span style="color: #3FD485">i</span><span style="color: red">s</span><span style="color: #3FD485">t</span><span style="color: #FFD700">m</span><span style="color: red">a</span><span style="color: #3F69C7">s</span> Boba Giveaway!!</h1>
+    </div>
+
+    <div id="outputBlock">
+        <p id="output"></p>
+    </div>
+    
+    <div id="buttonBlock">
+        <button class="button button-light button4" id="startButton" onclick="performGiveaway(); this.disabled=true;" style="display: none;">Start Giveaway!</button>
+        <button class="button button-light button4" id="stopButton" onclick="location.reload();" style="display: none;">Restart Giveaway</button>
+    </div>
+
+    <div id="selectionBlock"><p>SELECT A GIVEAWAY!!</p></div>
+    <div id="initialSelectionBlock">
+        <div id="initialSelection1"><p><span>1</span></p></div>
+        <div id="initialSelection2"><p><span>2</span></p></div>
+        <div id="initialSelection3"><p><span>3</span></p></div>
+        <div id="initialSelection4"><p><span>4</span></p></div>
+    </div>
+    <div id="footerBlock">
+        <div class="unchosen" id="giveaway1" onclick="changeGiveaway('#giveaway1');"><p>$10 Tea Maru</p></div>
+        <div class="unchosen" id="giveaway2" onclick="changeGiveaway('#giveaway2');"><p>$10 Tea Maru</p></div>
+        <div class="unchosen" id="giveaway3" onclick="changeGiveaway('#giveaway3');"><p>$10 FikaFika</p></div>
+        <div class="unchosen" id="giveaway4" onclick="changeGiveaway('#giveaway4');"><p>$10 FikaFika</p></div>
+    </div>
+
+    <div id="kitty"></div>
+
+<!-- Used for confetti -->
+<canvas id="canvas"></canvas>
+
+</body>
+</html>

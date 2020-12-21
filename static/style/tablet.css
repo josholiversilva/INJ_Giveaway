@@ -1,0 +1,137 @@
+/* ----------- iPad ----------- */
+/* Portrait and Landscape */
+@import url("../index.css");
+@media screen and (min-width:700px) and (max-width:899px) {
+
+    /* Child CSS file specifically for Ipad Pro for parent ../index.css */
+
+    body {
+        width: 100%;
+        height: 100px;
+        background-image: url("../pics/pink_boba.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    /* Festivities */
+    #christmas {
+        background-image: url("../pics/reeve.png");
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        transform: scale(-1,-1);
+        position: fixed;
+        left: 30px;
+    }
+
+    #lights1 {
+        background-image: url("../pics/lights.png");
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        transform: rotate(-90deg);
+        position: fixed;
+        left: 200px;
+        top: 100px;
+    }
+
+    #lights2 {
+        background-image: url("../pics/lights.png");
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        transform: rotate(-90deg);
+        position: fixed;
+        left: 390px;
+        top: 100px;
+    }
+
+    #lights3 {
+        background-image: url("../pics/lights.png");
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        transform: rotate(-90deg);
+        position: fixed;
+        left: 580px;
+        top: 100px;
+    }
+
+    #startButton , #stopButton {
+        --button-light-color: var(--dark);
+        display: block;
+        display:inline-block;
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 18px;
+        box-shadow: 10px 5px 5px #9E9E9E;
+    }
+
+    #outputBlock {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 70%;
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-style: solid;
+        overflow: hidden;
+
+        background-color: purple;
+    }
+
+    #output {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 30%; /* The same as your div height */
+        font-size: 75px;
+        position: relative;
+    }
+
+    #buttonBlock {
+        position: fixed;
+        top: 37.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);  
+    }
+
+    #headerBlock {
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
+
+    #header {
+        font-family: IrisFont;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 105px;
+        position: relative;
+
+        text-shadow: 0px 4px 4px #000000;
+        -webkit-text-stroke: 0.00000001px plum;
+        color: white;
+    }
+
+    #footerBlock {
+        position: fixed;
+        bottom: 0;
+        height: 15%;
+        width: 100%;
+        text-align: center;
+        border-style: solid;
+        margin: 0px auto;
+    }
+
+    #footerBlock > div {
+        display: inline-block;
+        height: 90%;
+        width: 28%;
+        margin: 2%;
+        border: solid 1px #000;
+    }
+}

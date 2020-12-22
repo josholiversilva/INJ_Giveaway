@@ -13,8 +13,8 @@ func handlerFunc(w http.ResponseWriter, r *http.Request) {
 func main() {
 	//http.HandleFunc("/", handlerFunc)
 	http.Handle("/", http.FileServer(http.Dir("./static/")))
-	log.Println("Listening on :3000...")
-	err := http.ListenAndServe(":3000", nil)
+	log.Println("Listening on :8080...")
+	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 	  log.Fatal(err)
 	}
